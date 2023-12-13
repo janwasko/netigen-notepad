@@ -1,0 +1,24 @@
+# notepadToDoArchived.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/checklist"
+- waitForAnimationToEnd
+- inputText: "_Archived_"
+- tapOn:
+    above: "Add item"
+- inputText: "_Archived_"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Archive"
+- tapOn: "CANCEL"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Archive"
+- tapOn: "OK"
+- assertNotVisible: "_Archived_"
+- tapOn: "undo"
+- assertVisible: "_Archived_"

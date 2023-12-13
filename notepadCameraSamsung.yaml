@@ -1,0 +1,7 @@
+# notepadCameraSamsung.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "com.sec.android.app.camera:id/normal_center_button"
+- tapOn: "OK"

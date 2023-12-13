@@ -1,0 +1,17 @@
+# notepadMenuReminders.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "menuBtn"
+- tapOn: "Reminders"
+- assertVisible:
+    text: "You have no reminders"
+    optional: true
+- assertVisible:
+    text: "Old"
+    optional: true
+- assertVisible:
+    text: "Upcoming"
+    optional: true
+- back

@@ -1,0 +1,14 @@
+# notepadMenuAbout.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "menuBtn"
+- scroll
+- tapOn:
+    text: "About us"
+    index: 1
+- assertVisible: "About us"
+- assertVisible: "About application"
+- assertVisible: "Privacy policy"
+- back

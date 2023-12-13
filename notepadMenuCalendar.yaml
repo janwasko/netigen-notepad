@@ -1,0 +1,11 @@
+# notepadMenuCalendar.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "menuBtn"
+- tapOn: "Calendar"
+- assertVisible: "Calendar"
+# - runFlow: notepadTestNotesCalendar.yaml
+# - runFlow: notepadTestToDoListsCalendar.yaml
+- back

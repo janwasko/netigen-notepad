@@ -1,0 +1,20 @@
+# notepadNotePdf.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Pdf"
+- tapOn: "Enter your note here..."
+- inputText: "Pdf"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Convert to PDF"
+- waitForAnimationToEnd
+- back
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Pdf"

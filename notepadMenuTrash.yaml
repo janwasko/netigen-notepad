@@ -1,0 +1,16 @@
+# notepadMenuTrash.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "menuBtn"
+- tapOn: "Trash"
+- assertVisible:
+    text: "Trash is empty"
+    optional: true
+- runFlow:
+    when:
+        notVisible: "Trash is empty"
+    file:
+        notepadCheckTrash.yaml
+- back

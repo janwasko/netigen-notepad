@@ -1,0 +1,19 @@
+# notepadTestMenu.yaml
+
+appId: pl.netigen.notepad
+---
+- runFlow: notepadMenuLogin.yaml
+
+- runFlow: notepadMenuReminders.yaml
+- runFlow: notepadMenuCalendar.yaml
+- runFlow: notepadMenuArchive.yaml
+- runFlow: notepadMenuTrash.yaml
+- runFlow: notepadMenuPdf.yaml
+
+- runFlow: notepadMenuBackup.yaml
+# - runFlow: notepadMenuCustomization.yaml
+- runFlow: notepadMenuTranslations.yaml
+
+- runFlow: notepadMenuAbout.yaml
+
+- runFlow: notepadMenuLanguage.yaml

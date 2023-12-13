@@ -1,0 +1,22 @@
+# notepadNoteEmoji.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Emoji"
+- tapOn: "Enter your note here..."
+- inputText: "Emoji"
+- tapOn:
+    id: "emoticonImageView"
+- tapOn:
+    id: "image"
+    index: 9
+- tapOn:
+    id: "acceptBtn"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Emoji"

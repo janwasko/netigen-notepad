@@ -1,0 +1,23 @@
+# notepadToDoTag.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/checklist"
+- waitForAnimationToEnd
+- inputText: "Tag"
+- tapOn:
+    above: "Add item"
+- inputText: "Tag"
+- tapOn:
+    id: "add_tags_btn"
+- tapOn: "insert tag"
+- inputText: "tag"
+- pressKey: enter
+- tapOn:
+    id: "acceptBtn"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Tag"

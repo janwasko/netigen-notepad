@@ -1,0 +1,5 @@
+# notepadCheckTrash.yaml
+
+appId: pl.netigen.notepad
+---
+- assertVisible: "_Deleted_"

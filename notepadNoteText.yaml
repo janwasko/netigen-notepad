@@ -1,0 +1,100 @@
+# notepadNoteText.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Text"
+- tapOn: "Enter your note here..."
+- inputText: "Text"
+- pressKey: enter
+
+- tapOn:
+    id: "text_edit_btn"
+- tapOn:
+    id: "bold_text_btn"
+- tapOn:
+    id: "acceptBtn"
+- inputText: "Bold"
+- pressKey: enter
+
+- tapOn:
+    id: "text_edit_btn"
+- tapOn:
+    id: "bold_text_btn"
+- tapOn:
+    id: "italic_text_btn"
+- tapOn:
+    id: "acceptBtn"
+- inputText: "Italic"
+- pressKey: enter
+
+- tapOn:
+    id: "text_edit_btn"
+- tapOn:
+    id: "italic_text_btn"
+- tapOn:
+    id: "underline_text_btn"
+- tapOn:
+    id: "acceptBtn"
+- inputText: "Underline"
+- pressKey: enter
+
+- tapOn:
+    id: "text_edit_btn"
+- tapOn:
+    id: "underline_text_btn"
+- tapOn:
+    id: "color_text_btn"
+- tapOn:
+    id: "color"
+    index: 5
+- tapOn:
+    id: "okBtn"
+- tapOn:
+    id: "acceptBtn"
+- inputText: "Color"
+- pressKey: enter
+
+- tapOn:
+    id: "text_edit_btn"
+- tapOn:
+    id: "color_text_btn"
+- tapOn:
+    id: "color"
+    index: 0
+- tapOn:
+    id: "okBtn"
+- tapOn:
+    id: "background_color_text_btn"
+- tapOn:
+    id: "color"
+    index: "4"
+- tapOn:
+    id: "okBtn"
+- tapOn:
+    id: "acceptBtn"
+- inputText: "Fill"
+- pressKey: enter
+
+- tapOn:
+    id: "text_edit_btn"
+- tapOn:
+    id: "background_color_text_btn"
+- tapOn:
+    id: "color"
+    index: 0
+- tapOn:
+    id: "okBtn"
+- tapOn:
+    id: "fontText"
+    index: 5
+- tapOn:
+    id: "acceptBtn"
+- inputText: "Typeface"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Text"

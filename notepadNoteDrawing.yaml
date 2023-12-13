@@ -1,0 +1,22 @@
+# notepadNoteDrawing.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Drawing"
+- tapOn: "Enter your note here..."
+- inputText: "Drawing"
+- tapOn:
+    id: "add_drawing_btn"
+- swipe:
+    direction: LEFT
+- tapOn:
+    id: "backBtn"
+- tapOn: "SAVE"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Drawing"

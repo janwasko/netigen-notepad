@@ -1,0 +1,24 @@
+# notepadToDoDeleted.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/checklist"
+- waitForAnimationToEnd
+- inputText: "_Deleted_"
+- tapOn:
+    above: "Add item"
+- inputText: "_Deleted_"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Delete"
+- tapOn: "CANCEL"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Delete"
+- tapOn: "OK"
+- assertNotVisible: "_Deleted_"
+- tapOn: "undo"
+- assertVisible: "_Deleted_"

@@ -1,0 +1,10 @@
+# notepadMenuTranslations.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "menuBtn"
+- tapOn: "Help us translate"
+- assertVisible: "Translations"
+- assertVisible: "CONTACT US"
+- back

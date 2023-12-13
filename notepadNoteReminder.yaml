@@ -1,0 +1,23 @@
+# notepadNoteReminder.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Reminder"
+- tapOn: "Enter your note here..."
+- inputText: "Reminder"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Add reminder"
+- tapOn: "15"
+- tapOn: "OK"
+- tapOn: "6"
+- tapOn: "00"
+- tapOn: "OK"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Reminder"

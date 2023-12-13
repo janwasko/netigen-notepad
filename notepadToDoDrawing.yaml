@@ -1,0 +1,23 @@
+# notepadToDoDrawing.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/checklist"
+- waitForAnimationToEnd
+- inputText: "Drawing"
+- tapOn:
+    above: "Add item"
+- inputText: "Drawing"
+- tapOn:
+    id: "add_drawing_btn"
+- swipe:
+    direction: LEFT
+- tapOn:
+    id: "backBtn"
+- tapOn: "SAVE"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Drawing"

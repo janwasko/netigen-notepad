@@ -1,0 +1,27 @@
+# notepadNotePoints.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Points"
+- tapOn: "Enter your note here..."
+- inputText: "Points"
+- tapOn:
+    id: "points_btn"
+- inputText: "point1"
+- pressKey: enter
+- inputText: "point2"
+- pressKey: enter
+- inputText: "point3"
+- eraseText: 6
+- pressKey: backspace
+- pressKey: backspace
+- pressKey: enter
+- inputText: "point4"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Points"

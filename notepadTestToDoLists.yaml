@@ -1,0 +1,24 @@
+# notepadTestToDoLists.yaml
+
+appId: pl.netigen.notepad
+---
+- runFlow: notepadToDoUndoRedo.yaml
+- runFlow: notepadToDoLocked.yaml
+- runFlow: notepadToDoHidden.yaml
+- runFlow: notepadToDoReminder.yaml
+- runFlow: notepadToDoDate.yaml
+- runFlow: notepadToDoShared.yaml
+- runFlow: notepadToDoPdf.yaml
+- runFlow: notepadToDoArchived.yaml
+- runFlow: notepadToDoDeleted.yaml
+- runFlow: notepadToDoSticker.yaml
+- runFlow: notepadToDoEmoji.yaml
+- runFlow: notepadToDoCategory.yaml
+- runFlow: notepadToDoText.yaml
+- runFlow: notepadToDoRecording.yaml
+- runFlow: notepadToDoPhoto.yaml
+- runFlow: notepadToDoBackgroundColor.yaml
+- runFlow: notepadToDoBackgroundPicture.yaml
+- runFlow: notepadToDoDrawing.yaml
+- runFlow: notepadToDoEmojis.yaml
+- runFlow: notepadToDoTag.yaml

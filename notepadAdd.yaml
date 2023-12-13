@@ -1,0 +1,5 @@
+# notepadAdd.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn: "Add"

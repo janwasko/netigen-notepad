@@ -1,0 +1,21 @@
+# notepadToDoShared.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/checklist"
+- waitForAnimationToEnd
+- inputText: "Shared"
+- tapOn:
+    above: "Add item"
+- inputText: "Shared"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Share"
+- waitForAnimationToEnd
+- back
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Shared"

@@ -1,0 +1,19 @@
+# notepadMenuLogin.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "menuBtn"
+- tapOn: "Log in"
+- tapOn: "CANCEL"
+- tapOn: "Log in"
+- tapOn: "ACCEPT"
+- tapOn:
+    below: "to continue to Notes"
+- tapOn:
+    id: "logoutBtn"
+- tapOn: "CANCEL"
+- tapOn:
+    id: "logoutBtn"
+- tapOn: "YES"
+- back

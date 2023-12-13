@@ -1,0 +1,7 @@
+# notepadShowHidden.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "logoImg"
+    repeat: 4

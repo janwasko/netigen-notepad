@@ -1,0 +1,41 @@
+# notepadTestMore.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "moreBtn"
+- assertVisible: "Select"
+- assertVisible: "Select all notes"
+- tapOn: "Select all notes"
+- tapOn:
+    id: "backBtn"
+
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Select all notes"
+- tapOn:
+    id: "delete_btn"
+- tapOn: "CANCEL"
+- tapOn:
+    id: "delete_btn"
+- tapOn: "OK"
+- assertVisible:
+    id: "noContentTv"
+- tapOn: "undo"
+- assertNotVisible:
+    id: "noContentTv"
+
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Select all notes"
+- tapOn:
+    id: "archiveBtn"
+- tapOn: "CANCEL"
+- tapOn:
+    id: "archiveBtn"
+- tapOn: "OK"
+- assertVisible:
+    id: "noContentTv"
+- tapOn: "undo"
+- assertNotVisible:
+    id: "noContentTv"

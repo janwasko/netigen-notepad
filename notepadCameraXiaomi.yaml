@@ -1,0 +1,7 @@
+# notepadCameraXiaomi.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "com.android.camera:id/shutter_button_horizontal"
+- tapOn: "Done"

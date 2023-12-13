@@ -1,0 +1,23 @@
+# notepadNoteHidden.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Hidden"
+- tapOn: "Enter your note here..."
+- inputText: "Hidden"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Hide note"
+- runFlow:
+    when:
+        visible: "(Perform this gesture to continue)"
+    file:
+        notepadShowHidden.yaml
+- tapOn:
+    id: "backBtn"
+- assertNotVisible: "Hidden"

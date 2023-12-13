@@ -1,0 +1,20 @@
+# notepadNoteCategory.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Category"
+- tapOn: "Enter your note here..."
+- inputText: "Category"
+- tapOn:
+    id: "category_btn"
+- tapOn: "New category..."
+- inputText: "C1"
+- tapOn: "CREATE"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "C1"

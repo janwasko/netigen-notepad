@@ -1,0 +1,27 @@
+# notepadCategoryDelete.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "category_manager_btn"
+- tapOn:
+    id: "add_category_btn"
+- inputText: "Deleted"
+- tapOn: "CREATE"
+- assertVisible: "Deleted (0)"
+- tapOn:
+    id: "options_btn"
+    index: 3
+- tapOn: "Delete category"
+- tapOn: "CANCEL"
+- assertVisible: "Deleted (0)"
+- tapOn:
+    id: "options_btn"
+    index: 3
+- tapOn: "Delete category"
+- tapOn: "DELETE"
+- assertNotVisible: "Deleted (0)"
+- tapOn:
+    id: "backBtn"
+- assertNotVisible: "Deleted"
+- waitForAnimationToEnd

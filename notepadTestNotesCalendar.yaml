@@ -1,0 +1,26 @@
+# notepadTestNotesCalendar.yaml
+
+appId: pl.netigen.notepad
+---
+- runFlow: notepadNoteUndoRedo.yaml
+- runFlow: notepadNoteLocked.yaml
+- runFlow: notepadNoteHidden.yaml
+- runFlow: notepadNoteReminder.yaml
+- runFlow: notepadNoteDate.yaml
+- runFlow: notepadNoteShared.yaml
+- runFlow: notepadNotePdf.yaml
+- runFlow: notepadNoteArchived.yaml
+- runFlow: notepadNoteDeleted.yaml
+- runFlow: notepadNoteSticker.yaml
+- runFlow: notepadNoteEmoji.yaml
+- runFlow: notepadNoteCategory.yaml
+- runFlow: notepadNoteText.yaml
+- runFlow: notepadNoteRecording.yaml
+- runFlow: notepadNotePhoto.yaml
+- runFlow: notepadNoteBackgroundColor.yaml
+- runFlow: notepadNoteBackgroundPicture.yaml
+- runFlow: notepadNoteDrawing.yaml
+- runFlow: notepadNoteEmojis.yaml
+- runFlow: notepadNoteTag.yaml
+- runFlow: notepadNotePoints.yaml
+- runFlow: notepadNoteBullets.yaml

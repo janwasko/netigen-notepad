@@ -1,0 +1,22 @@
+# notepadCategoryRename.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "category_manager_btn"
+- tapOn:
+    id: "add_category_btn"
+- inputText: "ToBeRenamed"
+- tapOn: "CREATE"
+- assertVisible: "ToBeRenamed (0)"
+- tapOn:
+    id: "options_btn"
+    index: 2
+- tapOn: "Rename category"
+- eraseText
+- inputText: "C0"
+- tapOn: "SAVE"
+- assertVisible: "C0 (0)"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "C0"

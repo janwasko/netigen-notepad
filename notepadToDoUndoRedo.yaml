@@ -1,0 +1,22 @@
+# notepadToDoUndoRedo.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/checklist"
+- waitForAnimationToEnd
+- inputText: "Undo Redo"
+- tapOn:
+    above: "Add item"
+- inputText: "_Undo Redo_"
+- tapOn:
+    id: "undoBtn"
+- assertNotVisible: "_Undo Redo_"
+- tapOn:
+    id: "redoBtn"
+- assertVisible: "_Undo Redo_"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Undo Redo"

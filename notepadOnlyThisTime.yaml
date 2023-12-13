@@ -1,0 +1,5 @@
+# notepadOnlyThisTime.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn: "Only this time"

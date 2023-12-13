@@ -1,0 +1,23 @@
+# notepadNoteDate.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Date"
+- tapOn: "Enter your note here..."
+- inputText: "Date"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Change creation date"
+- tapOn: "15"
+- tapOn: "OK"
+- tapOn: "6"
+- tapOn: "00"
+- tapOn: "OK"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Date"

@@ -1,0 +1,5 @@
+# notepadCheckArchive.yaml
+
+appId: pl.netigen.notepad
+---
+- assertVisible: "_Archived_"

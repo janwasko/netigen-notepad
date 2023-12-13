@@ -1,0 +1,20 @@
+# notepadNoteShared.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Shared"
+- tapOn: "Enter your note here..."
+- inputText: "Shared"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Share"
+- waitForAnimationToEnd
+- back
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Shared"

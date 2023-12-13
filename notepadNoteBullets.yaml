@@ -1,0 +1,31 @@
+# notepadNoteBullets.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Bullets"
+- tapOn: "Enter your note here..."
+- inputText: "Bullets"
+- swipe:
+   from: 
+     id: "pl.netigen.notepad:id/emoji_btn"
+   direction: LEFT
+- tapOn:
+    id: "bullets_btn"
+- inputText: "bullet1"
+- pressKey: enter
+- inputText: "bullet2"
+- pressKey: enter
+- inputText: "bullet3"
+- eraseText: 7
+- pressKey: backspace
+- pressKey: backspace
+- pressKey: enter
+- inputText: "bullet4"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Bullets"

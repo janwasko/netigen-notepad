@@ -1,0 +1,21 @@
+# notepadToDoPdf.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/checklist"
+- waitForAnimationToEnd
+- inputText: "Pdf"
+- tapOn:
+    above: "Add item"
+- inputText: "Pdf"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Convert to PDF"
+- waitForAnimationToEnd
+- back
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Pdf"

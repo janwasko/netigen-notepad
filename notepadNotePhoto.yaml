@@ -1,0 +1,38 @@
+# notepadNotePhoto.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Photo"
+- tapOn: "Enter your note here..."
+- inputText: "Photo"
+- tapOn:
+    id: "make_photo_btn"
+- runFlow:
+    when:
+        visible: "Only this time"
+    file: "notepadOnlyThisTime.yaml"
+- runFlow:
+    when:
+        visible: "Allow"
+    file: "notepadAllow.yaml"
+- tapOn: "Camera"
+- runFlow:
+    when:
+      visible:
+        id: "com.sec.android.app.camera:id/normal_center_button"
+    file: "notepadCameraSamsung.yaml"
+- runFlow:
+    when:
+      visible:
+        id: "com.android.camera:id/shutter_button_horizontal"
+    file: "notepadCameraXiaomi.yaml"
+- tapOn:
+    id: "cropSaveButton"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Photo"

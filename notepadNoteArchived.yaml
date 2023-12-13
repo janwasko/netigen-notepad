@@ -1,0 +1,23 @@
+# notepadNoteArchived.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "_Archived_"
+- tapOn: "Enter your note here..."
+- inputText: "_Archived_"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Archive"
+- tapOn: "CANCEL"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Archive"
+- tapOn: "OK"
+- assertNotVisible: "_Archived_"
+- tapOn: "undo"
+- assertVisible: "_Archived_"

@@ -1,0 +1,22 @@
+# notepadNoteSticker.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Sticker"
+- tapOn: "Enter your note here..."
+- inputText: "Sticker"
+- tapOn:
+    id: "stickerImageView"
+- tapOn:
+    id: "image"
+    index: 9
+- tapOn:
+    id: "acceptBtn"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Sticker"

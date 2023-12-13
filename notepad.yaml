@@ -1,0 +1,20 @@
+# notepad.yaml
+
+appId: pl.netigen.notepad
+---
+- runFlow: notepadLaunch.yaml
+
+- runFlow: notepadTestCategories.yaml
+
+- runFlow: notepadTestNotes.yaml
+- runFlow: notepadTestToDoLists.yaml
+
+- tapOn: "Favs"
+
+- runFlow: notepadTestNotes.yaml
+- runFlow: notepadTestToDoLists.yaml
+
+- runFlow: notepadTestSearch.yaml
+- runFlow: notepadTestMore.yaml
+
+- runFlow: notepadTestMenu.yaml

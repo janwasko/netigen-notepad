@@ -1,0 +1,56 @@
+# notepadMenuCustomization.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "menuBtn"
+- tapOn: "Customization"
+
+- tapOn: "Widget (quick access)"
+- tapOn:
+    id: "selector"
+    index: 6
+- tapOn:
+    id: "backBtn"
+
+- tapOn: "Widget (home screen)"
+- runFlow:
+    when:
+        visible: "Add to Home screen?"
+    file:
+        notepadAdd.yaml
+- tapOn:
+    id: "selector"
+    index: 6
+- tapOn:
+    id: "backBtn"
+
+- tapOn: "Light or Dark Mode"
+- tapOn: "Light mode"
+- tapOn:
+    id: "acceptBtn"
+
+- tapOn: "Theme"
+- tapOn:
+    id: "color"
+    index: 1
+- tapOn:
+    id: "acceptBtn"
+
+- tapOn: "Home screen layout"
+- tapOn: 
+    above: "List"
+- tapOn:
+    id: "acceptBtn"
+
+- tapOn: "Default note color"
+- tapOn:
+    id: "selector"
+    index: 1
+- tapOn:
+    id: "acceptBtn"
+
+- tapOn: "Skip splash screen (PRO)"
+
+- tapOn:
+    id: "backBtn"

@@ -1,0 +1,22 @@
+# notepadNoteBackgroundColor.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Color"
+- tapOn: "Enter your note here..."
+- inputText: "Color"
+- tapOn:
+    id: "set_bg_btn"
+- tapOn:
+    id: "color"
+    index: 4
+- tapOn:
+    id: "acceptBtn"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Color"

@@ -1,0 +1,27 @@
+# notepadLaunch.yaml
+
+appId: pl.netigen.notepad
+---
+- launchApp:
+    clearState: true
+- runFlow:
+    when:
+        visible: "PIN code"
+    file:
+        notepadCancel.yaml
+- runFlow:
+    when:
+        visible: "Allow"
+    file:
+        notepadAllow.yaml
+- runFlow:
+    when:
+        visible: 
+            id: "com.android.vending:id/0_resource_name_obfuscated"
+    file:
+        notepadNotNow.yaml
+- runFlow:
+    when:
+        visible: "Improving the app"
+    file:
+        notepadNo.yaml

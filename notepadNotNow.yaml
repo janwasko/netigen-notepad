@@ -1,0 +1,5 @@
+# notepadNotNow.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn: "Not now"

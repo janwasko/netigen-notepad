@@ -1,0 +1,20 @@
+# notepadMenuBackup.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "menuBtn"
+- tapOn: "Backup"
+- tapOn: "You are not signed in"
+- tapOn: "CANCEL"
+- tapOn: "You are not signed in"
+- tapOn: "ACCEPT"
+- tapOn:
+    below: "to continue to Notes"
+- tapOn: "Log out from Google account"
+# - tapOn: "You are not signed in"
+# - tapOn: "ACCEPT"
+# - tapOn:
+#     below: "to continue to Notes"
+# - tapOn: "Delete account data and logout"
+- back

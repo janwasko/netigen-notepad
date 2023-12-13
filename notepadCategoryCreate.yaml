@@ -1,0 +1,14 @@
+# notepadCategoryCreate.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "category_manager_btn"
+- tapOn:
+    id: "add_category_btn"
+- inputText: "Favs"
+- tapOn: "CREATE"
+- assertVisible: "Favs (0)"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Favs"

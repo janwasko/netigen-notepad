@@ -1,0 +1,23 @@
+# notepadNoteLocked.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/note"
+- waitForAnimationToEnd
+- inputText: "Locked"
+- tapOn: "Enter your note here..."
+- inputText: "Locked"
+- tapOn:
+    id: "moreBtn"
+- tapOn: "Lock note"
+- runFlow:
+    when:
+        visible: "Password hint"
+    file:
+        notepadSetPassword.yaml
+- tapOn:
+    id: "backBtn"
+- assertNotVisible: "Locked"

@@ -1,0 +1,23 @@
+# notepadToDoBackgroundColor.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/checklist"
+- waitForAnimationToEnd
+- inputText: "Color"
+- tapOn:
+    above: "Add item"
+- inputText: "Color"
+- tapOn:
+    id: "set_bg_btn"
+- tapOn:
+    id: "color"
+    index: 4
+- tapOn:
+    id: "acceptBtn"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Color"

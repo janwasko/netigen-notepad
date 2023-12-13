@@ -1,0 +1,33 @@
+# notepadToDoRecording.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/checklist"
+- waitForAnimationToEnd
+- inputText: "Recording"
+- tapOn:
+    above: "Add item"
+- inputText: "Recording"
+- tapOn:
+    id: "add_record_btn"
+- runFlow:
+    when:
+        visible: "Only this time"
+    file: "notepadOnlyThisTime.yaml"
+- runFlow:
+    when:
+        visible: "Allow"
+    file: "notepadAllow.yaml"
+- tapOn: "Record"
+- tapOn:
+    id: "startStopRecordBtn"
+- tapOn:
+    id: "startStopRecordBtn"
+- tapOn:
+    id: "acceptRecordBtn"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "Recording"

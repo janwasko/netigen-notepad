@@ -1,0 +1,16 @@
+# notepadMenuArchive.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "menuBtn"
+- tapOn: "Archive"
+- assertVisible:
+    text: "Archive is empty"
+    optional: true
+- runFlow:
+    when:
+        notVisible: "Archive is empty"
+    file:
+        notepadCheckArchive.yaml
+- back

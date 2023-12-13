@@ -1,0 +1,21 @@
+# notepadToDoCategory.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "fab"
+- tapOn:
+    id: "pl.netigen.notepad:id/checklist"
+- waitForAnimationToEnd
+- inputText: "Category"
+- tapOn:
+    above: "Add item"
+- inputText: "Category"
+- tapOn:
+    id: "category_btn"
+- tapOn: "New category..."
+- inputText: "C2"
+- tapOn: "CREATE"
+- tapOn:
+    id: "backBtn"
+- assertVisible: "C2"

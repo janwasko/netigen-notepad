@@ -1,0 +1,7 @@
+# notepadTestCategories.yaml
+
+appId: pl.netigen.notepad
+---
+- runFlow: notepadCategoryCreate.yaml
+- runFlow: notepadCategoryRename.yaml
+- runFlow: notepadCategoryDelete.yaml

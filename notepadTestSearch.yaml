@@ -1,0 +1,22 @@
+# notepadTestSearch.yaml
+
+appId: pl.netigen.notepad
+---
+- tapOn:
+    id: "searchBtn"
+- assertVisible: "Note content"
+- assertVisible: "Checklists"
+- assertVisible: "Recordings"
+- assertVisible: "Drawings"
+- assertVisible: "Pictures"
+- assertVisible: "Alarms"
+- assertVisible: "Categories"
+- assertVisible: "All"
+- tapOn: "Type here..."
+- waitForAnimationToEnd
+- inputRandomText
+- assertVisible: "Try again, using more general search terms"
+- tapOn:
+    id: "clearBtn"
+- tapOn:
+    id: "backBtn"
